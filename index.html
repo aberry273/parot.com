@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>parot.com</title>
     <link rel="icon" type="image/x-icon" href="./src/favicon/favicon.ico">
-    
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -31,48 +30,31 @@
 
 <body class="container">
     <!-- Header -->
-    <div x-data="navbar(headerData)"></div>
-    <div x-data>
-      <span x-uppercase>sandbox!</span>
-    </div>
+    <nav class="topnav">
+      <ul>
+          <li>
+              <strong>
+                  <a href="#" style="text-decoration:none;">
+                      <img src="./src/images/logo.png" style="max-width:35px" />
+                      Parot
+                  </a>
+              </strong>
+          </li>
+      </ul>
+      <ul>
+        <!--
+          <li><a href="@link.Href" style="text-decoration:none;">@link.Text</a></li>
+        -->
+      </ul>
+    </nav>
     <span x-text="$now"></span>
     
-    <div x-data="{ message: 'Hello World!' }">
-      <div x-log="message"></div>
-    </div>
-    
-    <div x-data="{ message: 'Hello World!' }">
-    <div x-reactiveLog="message"></div>
-    
-    <button x-data @click="$dispatch('snackbar-success', { target: 'example-modal1' })"
-    >success</button>
-    <button x-data @click="$dispatch('snackbar-error', { target: 'example-modal1' })"
-    >error</button>
-    <button x-data @click="$dispatch('snackbar-information', { target: 'example-modal1' })"
-    >information</button>
-    
-    <div x-data="snackbar({event: 'snackbar-success', type: 'success' })" x-on:show:alert.window="show"></div>
-    <div x-data="snackbar({event: 'snackbar-error', type: 'error' })" x-on:show:alert.window="show"></div>
-    <div x-data="snackbar({event: 'snackbar-information', type: 'information' })" x-on:show:alert.window="show"></div>
-    
-    <button @click="message = 'yolo'">Change</button>
-    </div>
-        <button x-data x-on:click="$store.darkmode.toggle()">Toggle Dark Mode</button>
-        <div x-data="$store.darkmode">
-            <div x-text="$store.darkmode.dark"></div>
-        </div>
-     
         <!-- Modal-->
       <div x-data="modal({event: 'example-modal', id: 'example-modal' })"></div>
     
-      <button x-data @click="$events.emit('example-modal', { target: 'example-modal' })"
-        >Open</button>
         <!-- End Modal -->
         <article x-data data-theme="$store.darkmode.theme">
             <header>
-                <ul>
-                    <button aria-label="close" rel="prev" class="outline material-icons">add</button>
-                </ul>
                 <ul>
                     <p>
                         <span ></span>h
