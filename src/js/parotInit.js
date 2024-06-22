@@ -1,6 +1,6 @@
 //import alpinejs from 'https://cdn.skypack.dev/alpinejs';
 import alpinejs from './alpine.esm.js'
-
+/*
 // Load stores
 import * as stores from './stores/index.js';
 Object.keys(stores).forEach(store => {
@@ -44,7 +44,7 @@ import * as components from './components/index.js';
 Object.keys(components).forEach(component => {
     alpinejs.data(component, components[component]);
 });
-
+*/
 window.alpinejs = alpinejs
 alpinejs.start();
 
