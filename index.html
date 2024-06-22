@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>parot.com</title>
+    <link rel="icon" type="image/x-icon" href="./src/favicon/favicon.ico">
+    
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <!-- Classbased -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <!-- Classless - centered viewport -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" /> -->
+    <!-- Classless - fluid viewport --> 
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css" /> -->
+    <!-- CSS Overrides -->
+    <link rel="stylesheet" href="./src/css/app.css" />
+    <link rel="stylesheet" href="./src/css/overrides.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- PWA -->
+    <link rel="manifest" href="./src/manifest.json" />
+
+</head>
+
+<body class="container">
+    <!-- Header -->
+    <div x-data="navbar(headerData)"></div>
+    <div x-ref="sandbox" x-data="_html('sandbox', `/src/view/pages/sandbox.html`)"></div>
+     
+  </div>
+  <!-- ./ Main -->
+  
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <ul>
+        <small>
+          Built with <a href="https://picocss.com">Pico</a> •
+          <a href="https://github.com/picocss/examples/blob/master/v2-html-classless/index.html">
+            Source code
+          </a>
+        </small> 
+      </ul>
+      <ul>
+      </ul>
+    </nav>
+  </footer>
+  <!-- ./ Footer -->
+
+  <div x-data="snackbarList({event: 'snackbar-add', limit: 5 })" x-on:show:alert.window="show"></div>
+
+    <script defer>
+      let emojiJson = [];
+      const emojiJsonUrl = "https://unpkg.com/emoji.json@15.1.0/emoji.json"; 
+      fetch(emojiJsonUrl)
+      .then(res => res.json())
+      .then(out =>
+      {
+        console.log('Loaded emojis')
+        console.log(out)
+        emojiJson = out;
+      })
+      .catch(err => { throw err });
+    </script>
+    <!-- DATA -->
+    
+    <script type="module" src="/src/js/parotInit.js"></script> 
+
+    <script>
+        let navData = {
+            title: 'parot',
+            dropdown: {
+              href: "#",
+              img: "https://placehold.co/50",
+              items: [
+                {
+                    href: '#',
+                    text: 'about'
+                },
+                {
+                    href: '#',
+                    text: 'contact'
+                },
+                {
+                    href: '#',
+                    text: 'blog'
+                }
+              ]
+            },
+            items: [
+                {
+                    href: '#',
+                    text: 'about'
+                },
+                {
+                    href: '#',
+                    text: 'contact'
+                },
+                {
+                    href: '#',
+                    text: 'blog'
+                }
+            ]
+        }
+        let headerData = {
+            title: 'parrot',
+            subtitle: 'A tiny front-end library to build simple sites',
+            text: 'Total project size is < 20kb gzipped'
+        }
+    </script>
+</body>
+</html>
