@@ -47,166 +47,76 @@
         -->
       </ul>
     </nav>
-    <span x-text="$now"></span>
-    
-        <!-- Modal-->
-      <div x-data="modal({event: 'example-modal', id: 'example-modal' })"></div>
-    
-        <!-- End Modal -->
-        <article x-data data-theme="$store.darkmode.theme">
-            <header>
-                <ul>
-                    <p>
-                        <span ></span>h
-                        <strong>🗓️ Thank You for Registering!</strong>
-                    </p>
-                </ul>
-            </header>
-            <p>
-                We're excited to have you join us for our
-                upcoming event. Please arrive at the museum 
-                on time to check in and get started.
-            </p>
-            <ul>
-                <li>Date: Saturday, April 15</li>
-                <li>Time: 10:00am - 12:00pm</li>
-            </ul>
-            <footer>
-                <button className="secondary">
-                  Cancel
-                </button>
-                <button>Confirm</button>
-              </footer>
-        </article>
-    
-        <div x-data="{ title: 'Start Here' }">
-            <h1 x-text="title"></h1>
-        </div>
-    
-    
-        <div ax-load="visible" x-ignore
-            x-data="card()"
-        ></div>
-      <!-- ./ Header -->
-    
+
       <!-- Main -->
       <main>
         <!-- Preview -->
         <section id="preview">
-          <h2>Preview</h2>
-          <!-- Component -->
-        
-        <div
-            ax-load="visible"
-            x-data="example('message')"
-            x-ignore
-        ></div>
-    
+          <h2>Parot </h2>
+          <h4>Like Twitter but in realtime</h4>
+       
           <p>
-            Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla
-            iaculis eros a elit pharetra egestas.
+            Post like Twitter, discuss like Reddit, all in real-time.
           </p>
-          <form>
-            <input
-              type="text"
-              name="firstname"
-              placeholder="First name"
-              aria-label="First name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email address"
-              aria-label="Email address"
-              autocomplete="email"
-              required
-            />
-            <button type="submit">Subscribe</button>
-            <fieldset>
-              <label for="terms">
-                <input type="checkbox" role="switch" id="terms" name="terms" />
-                I agree to the
-                <a href="#" onclick="event.preventDefault()">Privacy Policy</a>
-              </label>
-            </fieldset>
-          </form>
         </section>
         <!-- ./ Preview -->
     
         <!-- Typography-->
         <section id="typography">
-          <h2>Typography</h2>
+          <h2>🦜 Why Parot?</h2>
           <p>
-            Aliquam lobortis vitae nibh nec rhoncus. Morbi mattis neque eget efficitur feugiat.
-            Vivamus porta nunc a erat mattis, mattis feugiat turpis pretium. Quisque sed tristique
-            felis.
-          </p>
-    
-          <!-- Blockquote-->
-          <blockquote>
-            "Maecenas vehicula metus tellus, vitae congue turpis hendrerit non. Nam at dui sit amet
-            ipsum cursus ornare."
-            <footer>
-              <cite>- Phasellus eget lacinia</cite>
-            </footer>
-          </blockquote>
-    
+            We want a platform that provides short-form content like Twitter, but manages the conversations better. We also believe discussions should be in real-time.
+          </p> 
+          
           <!-- Lists-->
-          <h3>Lists</h3>
+          <h3>🫡 Giving users control over their content</h3>
           <ul>
-            <li>Aliquam lobortis lacus eu libero ornare facilisis.</li>
-            <li>Nam et magna at libero scelerisque egestas.</li>
-            <li>Suspendisse id nisl ut leo finibus vehicula quis eu ex.</li>
-            <li>Proin ultricies turpis et volutpat vehicula.</li>
+            <li>We want to make it simple to create and consume content.</li>
+            <li>We want the community to control what is and isn't promoted.</li>
+            <li>We want to let the user to decide the algorithms for what they want to see.</li>
+            <li>We want to enable our community to decide what makes up a discussion</li>
+            <li>We want to provide all perspectives for any discussion.</li>
           </ul>
     
-          <!-- Inline text elements-->
-          <h3>Inline text elements</h3>
-          <p><a href="#" onclick="event.preventDefault()">Link</a></p>
-          <p><strong>Bold</strong></p>
-          <p><em>Italic</em></p>
-          <p><u>Underline</u></p>
-          <p><del>Deleted</del></p>
-          <p><ins>Inserted</ins></p>
-          <p><s>Strikethrough</s></p>
-          <p><small>Small </small></p>
-          <p>Text <sub>Sub</sub></p>
-          <p>Text <sup>Sup</sup></p>
+
+          <h2>Key features</h2>
+          <h4>🔶 Real-Time Discussions</h4>
           <p>
-            <abbr title="Abbreviation" data-tooltip="Abbreviation">Abbr.</abbr>
+            Jump into the conversation instantly! Parot keeps you and your community engaged and up-to-date with chat-like discussions on trending topics.
           </p>
-          <p><kbd>Kbd</kbd></p>
-          <p><mark>Highlighted</mark></p>
+
+          <h4>🔶 Dynamic Voting System</h4>
+          <p>
+            Vote on posts with a Reddit-based voting. Highlight the best responses and let your voice be heard in a meaningful way.
+          </p>
+
+          <h4>🔶 Reply control</h4>
+          <p>
+            Choose how your replies are, downt o how many characters each reply can have
+          </p>
+
+          <h4>🔶 Rich-text editing</h4>
+          <p>
+            Mentions, links, quoting, italics and bold your replies
+          </p>
+
+          <h4>🔶 Multi-quote</h4>
+          <p>
+            Quote up to 4 posts in each post allowing for true many-to-many conversations
+          </p>
+
+        </section>
+
+        <section>
+          <h2>How does it work?</h2>
+          <ul>
+            <li>Posts to the main feeds are limited to 256 characters</li>
+            <li>Each post can have its own rules for each reply:</li>
+            <li>How long the post can be, how many  images, videos or quotes are allowed.</li>
+            <li>What rich text formats can be used. </li>
+          <ul>
     
-          <!-- Headings-->
-          <h3>Heading 3</h3>
-          <p>
-            Integer bibendum malesuada libero vel eleifend. Fusce iaculis turpis ipsum, at efficitur
-            sem scelerisque vel. Aliquam auctor diam ut purus cursus fringilla. Class aptent taciti
-            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-          </p>
-          <h4>Heading 4</h4>
-          <p>
-            Cras fermentum velit vitae auctor aliquet. Nunc non congue urna, at blandit nibh. Donec ac
-            fermentum felis. Vivamus tincidunt arcu ut lacus hendrerit, eget mattis dui finibus.
-          </p>
-          <h5>Heading 5</h5>
-          <p>
-            Donec nec egestas nulla. Sed varius placerat felis eu suscipit. Mauris maximus ante in
-            consequat luctus. Morbi euismod sagittis efficitur. Aenean non eros orci. Vivamus ut diam
-            sem.
-          </p>
-          <h6>Heading 6</h6>
-          <p>
-            Ut sed quam non mauris placerat consequat vitae id risus. Vestibulum tincidunt nulla ut
-            tortor posuere, vitae malesuada tortor molestie. Sed nec interdum dolor. Vestibulum id
-            auctor nisi, a efficitur sem. Aliquam sollicitudin efficitur turpis, sollicitudin
-            hendrerit ligula semper id. Nunc risus felis, egestas eu tristique eget, convallis in
-            velit.
-          </p>
-    
-          <!-- Medias-->
+          <!-- Medias
           <figure>
             <img
               src="https://placehold.co/2000x1000"
@@ -216,203 +126,65 @@
               Image from
               <a href="https://unsplash.com/photos/a562ZEFKW8I" target="_blank">unsplash.com</a>
             </figcaption>
-          </figure>
+          </figure>-->
         </section>
         <!-- ./ Typography-->
     
         <!-- Form elements-->
         <section id="form">
-          <form>
-            <h2>Form elements</h2>
-    
-            <!-- Search -->
-            <label for="search">Search</label>
-            <input type="search" id="search" name="search" placeholder="Search" />
-    
-            <!-- Text -->
-            <label for="text">Text</label>
-            <input type="text" id="text" name="text" placeholder="Text" />
-            <small>Curabitur consequat lacus at lacus porta finibus.</small>
-    
-            <!-- Select -->
-            <label for="select">Select</label>
-            <select id="select" name="select" required>
-              <option value="" selected>Select…</option>
-              <option>…</option>
-            </select>
-    
-            <!-- File browser -->
-            <label for="file"
-              >File browser
-              <input type="file" id="file" name="file" />
-            </label>
-    
-            <!-- Range slider control -->
-            <label for="range"
-              >Range slider
-              <input type="range" min="0" max="100" value="50" id="range" name="range" />
-            </label>
-    
-            <!-- States -->
-    
-            <label for="valid">
-              Valid
-              <input type="text" id="valid" name="valid" placeholder="Valid" aria-invalid="false" />
-            </label>
-            <label for="invalid">
-              Invalid
-              <input
-                type="text"
-                id="invalid"
-                name="invalid"
-                placeholder="Invalid"
-                aria-invalid="true"
-              />
-            </label>
-            <label for="disabled">
-              Disabled
-              <input type="text" id="disabled" name="disabled" placeholder="Disabled" disabled />
-            </label>
-    
-            <!-- Date-->
-            <label for="date"
-              >Date
-              <input type="date" id="date" name="date" />
-            </label>
-    
-            <!-- Time-->
-            <label for="time"
-              >Time
-              <input type="time" id="time" name="time" />
-            </label>
-    
-            <!-- Color-->
-            <label for="color"
-              >Color
-              <input type="color" id="color" name="color" value="#0eaaaa" />
-            </label>
-    
-            <!-- Checkboxes -->
-            <fieldset>
-              <legend><strong>Checkboxes</strong></legend>
-              <label for="checkbox-1">
-                <input type="checkbox" id="checkbox-1" name="checkbox-1" checked />
-                Checkbox
-              </label>
-              <label for="checkbox-2">
-                <input type="checkbox" id="checkbox-2" name="checkbox-2" />
-                Checkbox
-              </label>
-            </fieldset>
-    
-            <!-- Radio buttons -->
-            <fieldset>
-              <legend><strong>Radio buttons</strong></legend>
-              <label for="radio-1">
-                <input type="radio" id="radio-1" name="radio" value="radio-1" checked />
-                Radio button
-              </label>
-              <label for="radio-2">
-                <input type="radio" id="radio-2" name="radio" value="radio-2" />
-                Radio button
-              </label>
-            </fieldset>
-    
-            <!-- Switch -->
-            <fieldset>
-              <legend><strong>Switches</strong></legend>
-              <label for="switch-1">
-                <input type="checkbox" id="switch-1" name="switch-1" role="switch" checked />
-                Switch
-              </label>
-              <label for="switch-2">
-                <input type="checkbox" id="switch-2" name="switch-2" role="switch" />
-                Switch
-              </label>
-            </fieldset>
-    
-            <!-- Buttons -->
-            <input type="reset" value="Reset" onclick="event.preventDefault()" />
-            <input type="submit" value="Submit" onclick="event.preventDefault()" />
-          </form>
+         
         </section>
         <!-- ./ Form elements-->
     
-        <!-- Modal -->
-        <section id="modal">
-          <h2>Modal</h2>
-          <button class="contrast" onclick="modalExample.showModal()">Launch demo modal</button>
-        </section>
-        <!-- ./ Modal -->
-    
-        <!-- Accordions -->
-        <section id="accordions">
-          <h2>Accordions</h2>
-          <details>
-            <summary>Accordion 1</summary>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna diam,
-              tincidunt nec porta sed, auctor id velit. Etiam venenatis nisl ut orci consequat, vitae
-              tempus quam commodo. Nulla non mauris ipsum. Aliquam eu posuere orci. Nulla convallis
-              lectus rutrum quam hendrerit, in facilisis elit sollicitudin. Mauris pulvinar pulvinar
-              mi, dictum tristique elit auctor quis. Maecenas ac ipsum ultrices, porta turpis sit
-              amet, congue turpis.
-            </p>
-          </details>
-          <details open>
-            <summary>Accordion 2</summary>
-            <ul>
-              <li>Vestibulum id elit quis massa interdum sodales.</li>
-              <li>Nunc quis eros vel odio pretium tincidunt nec quis neque.</li>
-              <li>Quisque sed eros non eros ornare elementum.</li>
-              <li>Cras sed libero aliquet, porta dolor quis, dapibus ipsum.</li>
-            </ul>
-          </details>
-        </section>
-        <!-- ./ Accordions -->
-    
         <!-- Article-->
         <article id="article">
-          <h2>Article</h2>
-          <p>
-            Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non
-            ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit
-            pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor pharetra
-            rutrum.
-          </p>
-          <footer>
-            <small>Duis nec elit placerat, suscipit nibh quis, finibus neque.</small>
-          </footer>
+          <nav>
+            <ul>
+              <h2>Try it now</h2></ul>
+            <ul>
+              <a role="button" href="https://parot.app" >Open Parot</a>
+            </ul>
+          </nav>
         </article>
         <!-- ./ Article-->
     
-        <!-- Group -->
-        <section id="group">
-          <h2>Group</h2>
-          <form>
-            <fieldset role="group">
-              <input name="email" type="email" placeholder="Enter your email" autocomplete="email" />
-              <input type="submit" value="Subscribe" />
-            </fieldset>
-          </form>
+      
+        <!-- Accordions -->
+        <section id="accordions">
+          <h2>FAQ</h2>
+          <details open>
+            <summary>Why 'parot'?</summary>
+            <p>
+              We loved Twitter and wanted to create an alternative that led to better discussions. Unfortunately the 'Parrot' domain was a lot more expensive..
+            </p>
+          </details>
+          <details open>
+            <summary>Is there only a single feed?</summary>
+            <p>
+              We have a single feed, however users can create their own channels which can contain their own posts or aggregate posts that share the same tags and catergories as their channel.
+            </p>
+          </details>
+          <details open>
+            <summary>What about Threads/BlueSky?</summary>
+            <p>
+              We see this as clones of Twitter. We want to make something a bit different and see providing users control over their own threads for discussions as being a key element to do so.
+            </p>
+          </details>
+          <details open>
+            <summary>Why choose this over Twitter or Reddit?</summary>
+            <p>
+              Our objective is to drive better real-time discussions between users. We like the discussion aspect of Reddit but have the interface, we like the interface and creative energy of Twitter, but hate the discussions.
+              So we're trying to find a common ground between the two platforms that enables the best of both worlds.
+            </p>
+          </details>
+          <details open>
+            <summary>What about AI</summary>
+            <p>
+              We want to exclude bots and AI based conversation as much as possible. We will work hard to ensure content posts by AI is flagged to allow consumers to easily identify it and vote on it accordingly
+            </p>
+          </details>
         </section>
-        <!-- ./ Group -->
-    
-        <!-- Progress -->
-        <section id="progress">
-          <h2>Progress bar</h2>
-          <progress id="progress-1" value="25" max="100"></progress>
-          <progress id="progress-2"></progress>
-        </section>
-        <!-- ./ Progress -->
-    
-        <!-- Loading -->
-        <section id="loading">
-          <h2>Loading</h2>
-          <article aria-busy="true"></article>
-          <button aria-busy="true">Please wait…</button>
-        </section>
-        <!-- ./ Loading -->
+        <!-- ./ Accordions -->
   </div>
   <!-- ./ Main -->
   
@@ -421,10 +193,7 @@
     <nav>
       <ul>
         <small>
-          Built with <a href="https://picocss.com">Pico</a> •
-          <a href="https://github.com/picocss/examples/blob/master/v2-html-classless/index.html">
-            Source code
-          </a>
+          Available at <a href="https://parot.app">Parot</a>
         </small> 
       </ul>
       <ul>

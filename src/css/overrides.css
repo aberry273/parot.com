@@ -1015,38 +1015,7 @@ input.file-field:is([type="file"]) {
 
 html {
     scrollbar-color: var(--pico-form-element-background-color);
-}
-/* RESPONSIVE GRID*/
-@media (min-width: 576px) {
-
-    .container {
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-        width: 768px;
-    }
-}
-
-@media (min-width: 1536px) {
-    .container {
-        max-width: 768px;
-    }
-}
+} 
 /* RESPONSIVE GRID*/
 @media (min-width: 576px) {
     .grid .panel {
